@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sip and Crumb Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5efe6;
+color:#3e2c23;
+}
+
+header{
+background:#2f1b12;
+color:white;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+header h2{
+font-size:30px;
+}
+
+.hero{
+height:55vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{font-size:60px;}
+.hero p{font-size:18px;}
+
+.hero-line{
+width:120px;
+height:5px;
+background:#c08a5b;
+margin:15px auto;
+}
+
+.section{
+max-width:1200px;
+margin:60px auto;
+padding:20px;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin-bottom:30px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
+}
+
+.card h3{
+margin-bottom:5px;
+}
+
+.ingredients{
+font-size:13px;
+margin-top:5px;
+}
+
+.price{
+margin-top:10px;
+font-weight:bold;
+color:#c08a5b;
+}
+
+.order-box{
+max-width:600px;
+margin:60px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:8px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:15px;
+border:none;
+border-radius:25px;
+background:#c08a5b;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#9b683e;
+}
+
+#total{
+text-align:center;
+margin-top:15px;
+font-size:20px;
+font-weight:bold;
+}
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d6a77a;
+}
+nav a{
+margin:0 10px;
+}
+footer{
+text-align:center;
+padding:20px;
+background:#2f1b12;
+color:white;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Sip and Crumb</h2>
+<nav>
+<a href="sip&crumb.html">Home</a>
+<a href="Menu1.html">Menu</a>
+<a href="About.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="stories1.html">Sip&Smile</a>
+</nav>
+</header>
+
+
+
+
+<div class="hero">
+<div>
+<h1>Sip and Crumb</h1>
+<div class="hero-line"></div>
+<p>Fresh Coffee • Warm Cookies • Cozy Moments</p>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">Coffee Menu</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<div class="card-content">
+<h3>Americano</h3>
+<p class="ingredients">Espresso, Hot Water</p>
+<div class="price">₱100</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+<div class="card-content">
+<h3>Espresso</h3>
+<p class="ingredients">Pure Coffee Beans</p>
+<div class="price">₱90</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+<div class="card-content">
+<h3>Latte</h3>
+<p class="ingredients">Espresso, Milk, Foam</p>
+<div class="price">₱130</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c">
+<div class="card-content">
+<h3>Cappuccino</h3>
+<p class="ingredients">Espresso, Milk Foam</p>
+<div class="price">₱145</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+<div class="card-content">
+<h3>Mocha</h3>
+<p class="ingredients">Espresso, Chocolate, Milk</p>
+<div class="price">₱150</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff">
+<div class="card-content">
+<h3>Caramel Macchiato</h3>
+<p class="ingredients">Espresso, Caramel, Milk</p>
+<div class="price">₱165</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c">
+<div class="card-content">
+<h3>Cold Brew</h3>
+<p class="ingredients">Coffee Grounds, Cold Water</p>
+<div class="price">₱120</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">Cookie Menu</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e">
+<div class="card-content">
+<h3>Chocolate Chip</h3>
+<p class="ingredients">Butter, Flour, Chocolate Chips</p>
+<div class="price">₱50</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002">
+<div class="card-content">
+<h3>Matcha Cookie</h3>
+<p class="ingredients">Matcha Powder, Flour, Sugar</p>
+<div class="price">₱70</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e">
+<div class="card-content">
+<h3>Peanut Butter</h3>
+<p class="ingredients">Peanut Butter, Flour, Butter</p>
+<div class="price">₱80</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+<div class="card-content">
+<h3>S’mores</h3>
+<p class="ingredients">Chocolate, Marshmallow, Graham</p>
+<div class="price">₱95</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35">
+<div class="card-content">
+<h3>Red Velvet</h3>
+<p class="ingredients">Cocoa, Cream Cheese</p>
+<div class="price">₱85</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
+<div class="card-content">
+<h3>Oatmeal Raisin</h3>
+<p class="ingredients">Oats, Raisins, Cinnamon</p>
+<div class="price">₱65</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e">
+<div class="card-content">
+<h3>Double Chocolate</h3>
+<p class="ingredients">Cocoa, Chocolate Chips</p>
+<div class="price">₱90</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="order-box">
+
+<h2>Place Your Order</h2>
+
+<input id="name" placeholder="Name">
+<input id="address" placeholder="Address">
+
+<h4>Coffee</h4>
+<select id="coffee">
+<option value="0">None</option>
+<option value="100">Americano - ₱100</option>
+<option value="90">Espresso - ₱90</option>
+<option value="130">Latte - ₱130</option>
+<option value="165">Caramel Macchiato - ₱165</option>
+<option value="120">Cold Brew - ₱120</option>
+</select>
+
+<h4>Sweetness Level</h4>
+<select id="sweetness">
+<option value="0%">0% (No Sugar)</option>
+<option value="25%">25%</option>
+<option value="50%">50% (Standard)</option>
+<option value="75%">75%</option>
+<option value="100%">100% (Extra Sweet)</option>
+</select>
+
+
+
+
+
+<h4>Cookie</h4>
+<select id="cookie">
+<option value="0">None</option>
+<option value="50">Chocolate Chip - ₱50</option>
+<option value="70">Matcha Cookie - ₱70</option>
+<option value="85">Red Velvet - ₱85</option>
+<option value="90">Double Chocolate - ₱90</option>
+</select>
+
+
+
+
+<h4>Coffe Quantity</h4>
+<input type="number" id="coffeeQty" value="1">
+
+<h4>Cookie Quantity</h4>
+<input type="number" id="cookieQty" value="1">
+
+<h4>Payment</h4>
+<select id="payment">
+<option value="">Select</option>
+<option>GCash</option>
+<option>Maya</option>
+<option>COD</option>
+</select>
+
+<button onclick="calc()">Calculate Total</button>
+<button onclick="submitOrder()">Submit Order</button>
+
+<h3 id="total"></h3>
+
+</div>
+
+<footer>
+<p>© 2026 Sip and Crumb</p>
+</footer>
+
+<script>
+function calc(){
+let coffee = document.getElementById("coffee").value;
+let cookie = document.getElementById("cookie").value;
+let cq = document.getElementById("coffeeQty").value;
+let kq = document.getElementById("cookieQty").value;
+
+let total = (coffee * cq) + (cookie * kq);
+
+document.getElementById("total").innerText = "Total: ₱" + total;
+}
+
+function submitOrder(){
+alert("Order submitted successfully ☕🍪");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Sip and Crumb</title>
+
+<style>
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    background:#f5efe6;
+    color:#3e2c23;
+}
+
+header {
+    background:#3b2618;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a {
+    color:white;
+    margin-left:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover {
+    color:#d6a77a;
+}
+
+.hero {
+    height:45vh;
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1 {
+    font-size:40px;
+}
+
+.container {
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:30px;
+}
+
+.card {
+    background:#fff8f0;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #d6a77a;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+form input, form textarea {
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+form textarea {
+    resize:none;
+    height:120px;
+}
+
+button {
+    background:#c08a5b;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    width:100%;
+    transition:0.3s;
+}
+
+button:hover {
+    background:#a47148;
+}
+
+.info p {
+    margin:10px 0;
+}
+
+footer {
+    background:#3b2618;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Sip and Crumb</h2>
+<nav>
+<a href="sip&crumb.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Get in Touch</h1>
+</section>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card info">
+<h2>Contact Information</h2>
+<p><strong>Email:</strong> sipandcrumb@gmail.com</p>
+<p><strong>Phone:</strong> 0912 345 6789</p>
+<p><strong>Location:</strong> Cebu City, Philippines</p>
+<p>We’d love to hear from you! Whether it’s feedback, inquiries, or orders, feel free to reach out.</p>
+</div>
+
+<div class="card">
+<h2>Send Us a Message</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Sip and Crumb | Crafted with passion</p>
+</footer>
+
+</body>
+</html>
